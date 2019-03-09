@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+
+}
+
+/* Header Section */
+
+header {
+  display: flex;
+  align-items: center;
+  height: 45.12px;
+  width: 100%;
+  background-color: black;
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+}
+
+header img {
+  height: 24px;
+  margin-left: 320px;
+  margin-right: 16px;
+  padding-left: 0.5rem;
+}
