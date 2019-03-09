@@ -87,3 +87,32 @@ nav span {
   display: inline-block;
   padding: 0.75rem 0;
 }
+
+/* Gallery Section */
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+
+  width: 960px;
+  margin: 48px auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 13rem;
+}
+
+.item img {
+  height: 9rem;
+}
+
+.item p {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.5rem 0;
+}
