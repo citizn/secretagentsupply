@@ -3,12 +3,16 @@
 
 /* Universal Styles */
 
+div {
+  border: 1px solid black;
+}
+
 html {
   font-size: 16px;
 }
 
 body {
-
+  font-family: Helvetica, sans-serif;
 }
 
 /* Header Section */
@@ -19,7 +23,7 @@ header {
   height: 45.12px;
   width: 100%;
   background-color: black;
-  font-family: Helvetica;
+
   font-size: 1rem;
   color: white;
 }
@@ -29,4 +33,57 @@ header img {
   margin-left: 320px;
   margin-right: 16px;
   padding-left: 0.5rem;
+}
+
+/* Main Banner Section */
+
+.main-container {
+  height: 400px;
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.announcement {
+  height: 160px;
+  width: 20rem;
+  position: relative;
+  top: 144px;
+  left: 320px;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+}
+
+.announcement .new-arrival {
+  width: 100%;
+  font-size: 1rem;
+  padding-top: 32px;
+  padding-bottom: 0.25rem;
+  padding-left: 32px;
+}
+
+.announcement .bikes {
+  width: 100%;
+  font-size: 2rem;
+  padding-bottom: 32px;
+  padding-left: 32px;
+}
+
+/* Navigation Section */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 2.5rem;
+  width: 100%;
+  background-color: firebrick;
+  color: white;
+}
+
+nav span {
+  display: inline-block;
+  padding: 0.75rem 0;
 }
