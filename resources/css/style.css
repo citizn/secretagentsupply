@@ -117,7 +117,7 @@ nav ul {
   align-items: center;
   justify-content: space-between;
   padding: .75rem 0;
-  list-style: none;
+  /*list-style: none;*/
 }
 
 .mobile-nav {
@@ -220,10 +220,9 @@ nav ul {
 footer {
   background-color: black;
   color: white;
-  height: 5rem;
   margin-top: 4rem;
-  text-align: left;
-  padding: 3rem;
+  /*text-align: left;*/
+  padding: 5rem 0;
 }
 
 @media only screen and (max-width: 470px) {
