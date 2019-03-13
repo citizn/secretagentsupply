@@ -60,9 +60,49 @@ h4 {
 }
 
 .headline h1 {
-  font-family: Helvetica;
+  /*font-family: Helvetica;*/
   font-size: 2rem;
-  margin: .25rem 0;
+  /*font-weight: bold;*/
+  margin-top: .25rem;
+}
+
+/*.headline h4 {
+  font-family: Helvetica;
+  font-weight: bold;
+}*/
+
+@media only screen and (max-width: 1024px) {
+  .headline h1 {
+    font-size: 1.5rem;
+  }
+
+  .headline h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+
+  .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+    /*font-family: Helvetica;*/
+    /*font-weight: bold;*/
+  }
+
+  .headline h4{
+    font-size: .77rem;
+    /*font-family: Helvetica;*/
+    /*font-weight: bold;*/
+  }
 }
 
 /* Navigation Bar */
@@ -78,6 +118,21 @@ nav ul {
   justify-content: space-between;
   padding: .75rem 0;
   list-style: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
 }
 
 /* Products and Business Section */
@@ -125,6 +180,41 @@ nav ul {
   padding: 1rem 2rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .product {
+    width: 47%;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+
+  .info {
+    width: 35%
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .products,
+  .business-info {
+    flex-wrap: wrap;
+  }
+
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+
 /* Footer Section */
 
 footer {
@@ -134,4 +224,10 @@ footer {
   margin-top: 4rem;
   text-align: left;
   padding: 3rem;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    text-align: center;
+  }
 }
